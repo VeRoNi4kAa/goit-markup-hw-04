@@ -22,6 +22,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--color-1);
+text-decoration: none;
 }
 .logo {
     color: #000000;
@@ -37,7 +38,8 @@ color: var(--color-1);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14; 
-    color: var(--color-3);   
+    color: var(--color-3); 
+    text-decoration: none;  
 }
 
 .studio:hover, .studio:focus {
@@ -49,6 +51,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 24px;
+text-decoration: none;
 }
 
 .mail:hover,.mail:focus {
@@ -125,6 +128,7 @@ color: var(--color-2);
     list-style: none;
     font-style: normal;
     color: var(--color-2);
+    text-decoration: none;
 }
 .adress:hover, .address:focus {
     color: var(--color-1);  
@@ -136,6 +140,7 @@ color: var(--color-2);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    text-decoration: none;
     }
     
     .mail2:hover,.mail2:focus {
