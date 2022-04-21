@@ -559,13 +559,20 @@ svg {
         background-color: rgba(255, 255, 255, 0.1);
     }
 
-    .footer .icon:hover {
-        background-color: var(--color-1);
+    .item-icon:hover {
+        fill: var(--background-color);
+        border-radius: 50%;
+        border-color: #2196F3;
+        background-color: #2196F3;
     }
 
     .item-icon {
         fill: var(--icon-color);
     }
-    .clients-item {
+    .client {
         fill: var(--icon-color)
             }
+
+    .client:hover {
+        fill: var(--color-1);
+    }
