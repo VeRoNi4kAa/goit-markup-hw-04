@@ -528,10 +528,39 @@ svg {
         border: 1px solid var(--icon-color);
         box-sizing: border-box;
         border-radius: 4px;
+    
+    }
+    .clients .link:hover{
+        color: var(--color-1);
+    }
+
+    .clients .link:focus{
+        color: var(--color-1);
     }
 
     .client {
         fill: var(--background-color);
         margin: 16px 32px;
         cursor: pointer;
+    }
+
+    .footer .social {
+        margin-top: 12px;
+        margin-left: 70px;
+    }
+
+    .social-title {
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--background-color);
+    }
+
+    .footer .social .list {
+        margin: 20px 0 0 0;
+    }
+
+    .footer .icon {
+        fill: var(--background-color);
+        background-color: rgba(255, 255, 255, 0.1);
     }
