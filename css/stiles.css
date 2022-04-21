@@ -317,14 +317,13 @@ background-color: var(--color-1);
 }
 .hero {
     text-align: center;
-    background: var(--background-color-1);
-    text-align: center;
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-size: auto auto;
     background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -467,4 +466,69 @@ margin-bottom: 10px;
     padding-bottom: 94px;
     padding-top: 0px;
 }
+.icon-mail {
+    display: inline-flex;
+    fill: currentColor;
+    margin-right: 10px;
+}
+.attention {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: var(--color-2);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
+.social .item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.social .list {
+    display: flex;
+    margin: 16px 32px 0 32px;
+    justify-content: space-between;
+}
+
+.social {
+    display: block;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.clients .list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.clients-item {
+        display: flex;
+    }
+
+    .clients .link {
+        border: 1px solid var(--background-color);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .client {
+        fill: var(--background-color);
+        margin: 16px 32px;
+    }
