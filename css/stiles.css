@@ -17,6 +17,7 @@ body {
 ul {
     margin: 0%;
     padding: 0%;
+    list-style: none;
 }
 
 img {
@@ -30,7 +31,7 @@ img {
     margin-top: 50px;
     margin-right: -30px;
 }
-h1, h2, h3 {
+h1, h2, h3, p {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -66,11 +67,7 @@ p {
         padding-top: 32px;
         padding-bottom: 32px;
 }
-.list {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
+
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +127,9 @@ p {
     margin-left: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+.contactmail {
+
 }
 .contacttel {
 margin-left: 50px;
@@ -353,9 +353,6 @@ margin-bottom: 30px;
 
 .list-about {
     display: flex;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
 }
 .foote {
     background: var(--background-color-1);  
@@ -530,12 +527,12 @@ svg {
         border-radius: 4px;
     
     }
-    .clients .link:hover{
-        color: var(--color-1);
+    .link:hover{
+        fill: var(--color-1);
     }
 
-    .clients .link:focus{
-        color: var(--color-1);
+   .link:focus{
+        fill: var(--color-1);
     }
 
     .client {
