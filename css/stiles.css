@@ -128,9 +128,6 @@ p {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.contactmail {
-
-}
 .contacttel {
 margin-left: 50px;
 }
@@ -565,3 +562,10 @@ svg {
     .footer .icon:hover {
         background-color: var(--color-1);
     }
+
+    .item-icon {
+        fill: var(--icon-color);
+    }
+    .clients-item {
+        fill: var(--icon-color)
+            }
