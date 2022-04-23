@@ -542,12 +542,9 @@ svg {
         border-radius: 4px;
     
     }
-    .link:hover{
+    .clients .link:hover{
         fill: var(--color-1);
-    }
-
-   .link:focus{
-        fill: var(--color-1);
+        border: 1px solid var(--color-1);
     }
 
     .client {
