@@ -256,13 +256,14 @@ padding: 0;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .mail, .tel {
+display: flex;
 color: var(--color); 
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 24px;
 text-decoration: none;
-}
+align-items: center;}
 
 .mail:hover,.mail:focus {
     color: var(--color-1);    
@@ -281,9 +282,33 @@ color: var(--color-3);
 }
 
 .link:hover, .link:focus{
-    color: var(--color-1);  
+    color: var(--color-1); 
+    border-color: var(--color-1); 
+}
+.link:hover svg, .link:focus svg{
+    fill: var(--color-1); 
 }
 
+li .item-icon{
+    width: 44px;
+    height: 44px;
+}
+li .item-icon a {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+li .item-icon svg{
+    fill: var(--icon-color);
+}
+li .item-icon:hover svg{
+    fill: var(--background-color);
+}
+li .item-icon:focus svg{
+    fill: var(--background-color);
+}
 .button1 {
     cursor: pointer;
     font-weight: 700;
@@ -510,7 +535,6 @@ svg {
     display: block;
     max-width: 100%;
 }
-
 .social .list {
     display: flex;
     margin: 16px 32px 0 32px;
@@ -518,7 +542,7 @@ svg {
 }
 
 .social {
-    display: block;
+    display: f;
 }
 
 .clients-title {
@@ -548,7 +572,7 @@ svg {
     }
 
     .client {
-        fill: var(--background-color);
+        /* fill: var(--background-color); */
         margin: 16px 32px;
         cursor: pointer;
     }
@@ -565,10 +589,20 @@ svg {
         color: var(--background-color);
     }
 
-    .footer .social .list {
-        margin: 20px 0 0 0;
+    footer .container{
+        display: flex;
+        align-items: baseline;
     }
 
+    footer .social .list {
+        margin: 20px 0 0 0;
+
+    }
+
+    footer .social{
+        margin-left: 70px;
+    }
+  
     .item-icon:hover {
         fill: var(--background-color);
         border-radius: 50%;
@@ -576,16 +610,27 @@ svg {
         background-color: #2196F3;
     }
 
-    .item-icon {
-        fill: var(--icon-color);
+    footer .item-icon svg {
+        fill: var(--background-color);
+    
+    }
+    footer .item-icon{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border-color: rgba(255, 255, 255, 0.1);;
+        background-color: rgba(255, 255, 255, 0.1);;
+    }
+    footer .item-icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
     .client {
         fill: var(--icon-color)
             }
-
-    .client:hover {
-        fill: var(--color-1);
-    }
     .footer-icon {
         fill: var(--background-color);
     }
