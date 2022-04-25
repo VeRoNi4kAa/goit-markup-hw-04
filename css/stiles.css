@@ -14,7 +14,6 @@ body {
     letter-spacing: 0.03em;
     
 }
-
 ul {
     margin: 0%;
     padding: 0%;
@@ -246,15 +245,17 @@ padding: 0;
     padding: 0;
     cursor: pointer;
 }
-.project-foto:hover {
+.webproject{
+    display: block;
+    list-style: none;
+}
+.webproject:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-foto1:hover {
+.webproject:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-foto3:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .mail, .tel {
 display: flex;
 color: var(--color); 
@@ -363,6 +364,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 
 .hero {
+    background-position: center;
     text-align: center;
     max-width: 1600px;
     height: 600px;
@@ -542,13 +544,10 @@ svg {
 }
 .social .list {
     display: flex;
-    margin: 16px 32px 0 32px;
-    justify-content: space-between;
+    margin-top: 16px;
+    justify-content: center;
 }
 
-.social {
-    display: f;
-}
 
 .clients-title {
     font-weight: 700;
@@ -566,20 +565,23 @@ svg {
     }
 
     .clients .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 1px solid var(--icon-color);
         box-sizing: border-box;
         border-radius: 4px;
+        width: 170px;
+height: 92px;
     
-    }
+    align-items: center;justify-content: center;}
     .clients .link:hover{
         fill: var(--color-1);
         border: 1px solid var(--color-1);
     }
 
     .client {
-        /* fill: var(--background-color); */
-        margin: 16px 32px;
-        cursor: pointer;
+
     }
 
     .footer .social {
@@ -619,12 +621,16 @@ svg {
         fill: var(--background-color);
     
     }
+    
     footer .item-icon{
         width: 44px;
         height: 44px;
         border-radius: 50%;
         border-color: rgba(255, 255, 255, 0.1);;
         background-color: rgba(255, 255, 255, 0.1);;
+    }
+    footer .social .item-icon + .item-icon {
+        margin-left: 10px;
     }
     footer .item-icon a {
     width: 100%;
@@ -640,6 +646,12 @@ svg {
         fill: var(--background-color);
     }
     .footer-icon:hover {
+        fill: var(--background-color);
+        border-radius: 50%;
+        border-color: #2196F3;
+        background-color: #2196F3;
+    }
+    .footer-icon:focus {
         fill: var(--background-color);
         border-radius: 50%;
         border-color: #2196F3;
